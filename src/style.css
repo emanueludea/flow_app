@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+/* Reset Vue Flow's default node wrapper styles for all custom node types */
+.vue-flow__node-startEnd,
+.vue-flow__node-process,
+.vue-flow__node-decision,
+.vue-flow__node-input,
+.vue-flow__node-output,
+.vue-flow__node-comment {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: inherit !important;
+  width: auto !important;
+}
+
+/* Smoother edges */
+.vue-flow__edge-path {
+  stroke-width: 2;
+}
+.vue-flow__edge.selected .vue-flow__edge-path {
+  stroke: #1565C0;
+  stroke-width: 2.5;
+}
