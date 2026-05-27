@@ -9,6 +9,9 @@ export default defineConfig({
     vue(),
     vuetify({ autoImport: true }),
   ],
+  build: {
+    chunkSizeWarningLimit: 1000,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
